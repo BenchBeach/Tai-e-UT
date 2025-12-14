@@ -166,3 +166,11 @@
 - description: find the method that may drop or ignore exceptions
   analysisClass: pascal.taie.analysis.bugfinder.DroppedException
   id: dropped-exception
+
+- description: export CFG and DFG of specified method to JSON
+  analysisClass: pascal.taie.analysis.graph.export.GraphExporter
+  id: graph-export
+  requires: [ cfg, reach-def ]
+  options:
+    method: null # method signature, e.g., "<com.example.MyClass: void myMethod(int,java.lang.String)>"
+    output: null # output file path, e.g., "/path/to/output.json" (optional, default: output/graphs/{ClassName}_{methodName}.json)
