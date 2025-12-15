@@ -43,12 +43,16 @@ import pascal.taie.language.classes.ClassHierarchy;
 import pascal.taie.language.classes.JMethod;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.HashSet;
 import pascal.taie.util.collection.Maps;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.StringJoiner;
 
 /**
  * Exports Control Flow Graph (CFG) and Data Flow Graph (DFG) of specified methods to JSON format.
@@ -135,7 +139,10 @@ public class GraphExporter extends ProgramAnalysis<Void> {
         result.put("dfg", dfgJson);
 
         // Export to JSON file
-        exportToJson(result, method);
+        File jsonFile = exportToJson(result, method);
+
+        // Export to plain text file
+        exportToText(result, jsonFile);
 
         return null;
     }
@@ -315,8 +322,10 @@ public class GraphExporter extends ProgramAnalysis<Void> {
 
     /**
      * Exports the result to a JSON file.
+     *
+     * @return the output file
      */
-    private void exportToJson(Map<String, Object> result, JMethod method) {
+    private File exportToJson(Map<String, Object> result, JMethod method) {
         File outputFile;
         if (outputPath != null && !outputPath.isEmpty()) {
             // Use user-specified output path
@@ -341,6 +350,144 @@ public class GraphExporter extends ProgramAnalysis<Void> {
             logger.info("Graph exported to: {}", outputFile.getAbsolutePath());
         } catch (IOException e) {
             logger.error("Failed to export graph to JSON: {}", e.getMessage());
+        }
+        return outputFile;
+    }
+
+    /**
+     * Exports the result to a plain text file with optimized format.
+     * The text file is saved alongside the JSON file with .txt extension.
+     */
+    @SuppressWarnings("unchecked")
+    private void exportToText(Map<String, Object> result, File jsonFile) {
+        // Determine text output file path (same as JSON but with .txt extension)
+        String jsonPath = jsonFile.getAbsolutePath();
+        String textPath = jsonPath.endsWith(".json")
+                ? jsonPath.substring(0, jsonPath.length() - 5) + ".txt"
+                : jsonPath + ".txt";
+        File textFile = new File(textPath);
+
+        try (PrintWriter writer = new PrintWriter(new FileWriter(textFile))) {
+            // Get data from result map
+            String methodSig = (String) result.get("method");
+            Map<String, Object> cfg = (Map<String, Object>) result.get("cfg");
+            Map<String, Object> dfg = (Map<String, Object>) result.get("dfg");
+
+            List<Map<String, Object>> cfgNodes = (List<Map<String, Object>>) cfg.get("nodes");
+            List<Map<String, Object>> cfgEdges = (List<Map<String, Object>>) cfg.get("edges");
+            List<Map<String, Object>> dfgEdges = (List<Map<String, Object>>) dfg.get("edges");
+
+            // Build node index map: id -> node
+            Map<String, Map<String, Object>> nodeMap = Maps.newLinkedHashMap();
+            for (Map<String, Object> node : cfgNodes) {
+                nodeMap.put((String) node.get("id"), node);
+            }
+
+            // 1. Build CFG mapping (Source -> {Target, Kind})
+            Map<String, List<String>> nextHops = Maps.newLinkedHashMap();
+            for (Map<String, Object> edge : cfgEdges) {
+                String src = (String) edge.get("source");
+                String tgt = (String) edge.get("target");
+                String kind = (String) edge.get("kind");
+
+                nextHops.computeIfAbsent(src, k -> new ArrayList<>());
+
+                // Simplify jump labels
+                String label = switch (kind) {
+                    case "IF_TRUE" -> "True";
+                    case "IF_FALSE" -> "False";
+                    case "RETURN" -> "Exit";
+                    case "GOTO" -> "Goto";
+                    case "SWITCH_CASE" -> "Case";
+                    case "SWITCH_DEFAULT" -> "Default";
+                    default -> "Next";
+                };
+
+                // Map target ID (map stmt_X to X)
+                String tgtIdx;
+                if (nodeMap.containsKey(tgt)) {
+                    Map<String, Object> tgtNode = nodeMap.get(tgt);
+                    Object idx = tgtNode.get("index");
+                    tgtIdx = idx != null ? idx.toString() : "Exit";
+                } else {
+                    tgtIdx = "Exit";
+                }
+                nextHops.get(src).add(label + ": " + tgtIdx);
+            }
+
+            // 2. Build DFG mapping (Target -> [Source Definitions])
+            Map<String, Set<String>> dataDeps = Maps.newLinkedHashMap();
+            for (Map<String, Object> edge : dfgEdges) {
+                String tgt = (String) edge.get("target");
+                String src = (String) edge.get("source");
+
+                // Get source node's index
+                String srcRef;
+                if (nodeMap.containsKey(src)) {
+                    Map<String, Object> srcNode = nodeMap.get(src);
+                    Object idx = srcNode.get("index");
+                    srcRef = idx != null ? idx.toString() : src;
+                } else {
+                    srcRef = src;
+                }
+
+                dataDeps.computeIfAbsent(tgt, k -> new HashSet<>()).add(srcRef);
+            }
+
+            // 3. Generate output text
+            writer.println("Target Method: " + methodSig);
+            writer.println();
+            writer.println("IR Code (Format: [ID] Label | {CFG} | {DFG Deps}):");
+            writer.println("-".repeat(100));
+
+            // Sort nodes by index
+            List<Map<String, Object>> sortedNodes = new ArrayList<>(cfgNodes);
+            sortedNodes.sort((a, b) -> {
+                Object idxA = a.get("index");
+                Object idxB = b.get("index");
+                int ia = idxA != null ? ((Number) idxA).intValue() : -1;
+                int ib = idxB != null ? ((Number) idxB).intValue() : -1;
+                return Integer.compare(ia, ib);
+            });
+
+            for (Map<String, Object> node : sortedNodes) {
+                String type = (String) node.get("type");
+                // Skip ENTRY and EXIT nodes
+                if ("ENTRY".equals(type) || "EXIT".equals(type)) {
+                    continue;
+                }
+
+                String nid = (String) node.get("id");
+                Object idxObj = node.get("index");
+                int idx = idxObj != null ? ((Number) idxObj).intValue() : -1;
+
+                // Clean label, remove redundant info
+                String label = ((String) node.get("label")).replace("\"", "'");
+                // Truncate label if too long
+                if (label.length() > 60) {
+                    label = label.substring(0, 57) + "...";
+                }
+
+                // Get flow targets
+                List<String> flows = nextHops.getOrDefault(nid, List.of("End"));
+                String flow = String.join(", ", flows);
+                if (flow.isEmpty()) {
+                    flow = "End";
+                }
+
+                // Get dependencies
+                Set<String> deps = dataDeps.getOrDefault(nid, Set.of());
+                String depsStr = deps.isEmpty() ? "None" : String.join(", ", deps);
+
+                // Format line
+                String line = String.format("%-3d: %-60s | {%s} | {Uses: %s}",
+                        idx, label, flow, depsStr);
+                writer.println(line);
+            }
+
+            logger.info("Text graph exported to: {}", textFile.getAbsolutePath());
+        } catch (IOException e) {
+            logger.error("Failed to export graph to text: {}", e.getMessage());
         }
     }
 

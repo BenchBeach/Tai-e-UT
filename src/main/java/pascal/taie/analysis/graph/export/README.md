@@ -1,11 +1,12 @@
 # Graph Exporter
 
-导出指定方法的控制流图（CFG）和数据流图（DFG）到 JSON 格式。
+导出指定方法的控制流图（CFG）和数据流图（DFG）到 JSON 和纯文本格式。
 
 ## 功能特性
 
 - **CFG（控制流图）**: 包含方法的所有语句节点和控制流边
 - **DFG（数据流图）**: 基于 def-use 链的数据依赖关系图
+- **双格式输出**: 同时生成 JSON 文件和易读的纯文本文件
 
 ## 使用方法
 
@@ -159,10 +160,46 @@ DFG 边表示**数据依赖关系**（def-use chains）：
 
 这些依赖会自动运行，无需手动指定。
 
+## 纯文本输出格式
+
+除了 JSON 文件外，还会自动生成一个同名的 `.txt` 文件，格式如下：
+
+```
+Target Method: <方法签名>
+
+IR Code (Format: [ID] Label | {CFG} | {DFG Deps}):
+----------------------------------------------------------------------------------------------------
+0  : %longconst0 = 0L                                             | {Next: 1} | {Uses: None}
+1  : $b1 = e cmp %longconst0                                      | {Next: 2} | {Uses: 0}
+2  : %intconst1 = 0                                               | {Next: 3} | {Uses: None}
+3  : if ($b1 != %intconst1) goto 6                                | {True: 6, False: 4} | {Uses: 1, 2}
+...
+```
+
+### 文本格式说明
+
+每行格式: `[ID]: [Label] | {CFG跳转} | {DFG依赖}`
+
+**CFG 跳转标签:**
+| 标签 | 含义 |
+|------|------|
+| `Next: X` | 顺序执行到语句 X |
+| `True: X` | if 条件为真跳转到 X |
+| `False: X` | if 条件为假跳转到 X |
+| `Goto: X` | 无条件跳转到 X |
+| `Exit: Exit` | 返回/方法出口 |
+| `Case: X` | switch case 跳转 |
+| `Default: X` | switch default 跳转 |
+
+**DFG 依赖:**
+- `Uses: 0, 2` 表示当前语句使用了语句 0 和 2 定义的变量
+- `Uses: None` 表示当前语句不依赖其他语句的定义
+
 ## 注意事项
 
 1. 确保目标方法不是 `abstract` 或 `native` 方法
 2. 需要提供正确的 classpath，包含目标类的 `.class` 文件
 3. 如果输出路径的父目录不存在，会自动创建
 4. 建议使用 `-java 8` 参数指定 Java 版本，以正确加载 JRE 类库
+5. 输出文件会同时生成 `.json` 和 `.txt` 两个文件
 
