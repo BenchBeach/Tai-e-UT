@@ -1,0 +1,2173 @@
+{
+  "method" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>",
+  "cfg" : {
+    "nodes" : [ {
+      "id" : "entry",
+      "type" : "ENTRY",
+      "label" : "Entry"
+    }, {
+      "id" : "stmt_0",
+      "index" : 0,
+      "type" : "AssignLiteral",
+      "label" : "%longconst0 = 0L",
+      "lineNumber" : 1596,
+      "def" : "%longconst0",
+      "uses" : [ "0L" ]
+    }, {
+      "id" : "stmt_1",
+      "index" : 1,
+      "type" : "Binary",
+      "label" : "$b1 = e cmp %longconst0",
+      "lineNumber" : 1596,
+      "def" : "$b1",
+      "uses" : [ "e", "%longconst0", "e cmp %longconst0" ]
+    }, {
+      "id" : "stmt_2",
+      "index" : 2,
+      "type" : "AssignLiteral",
+      "label" : "%intconst1 = 0",
+      "lineNumber" : 1596,
+      "def" : "%intconst1",
+      "uses" : [ "0" ]
+    }, {
+      "id" : "stmt_3",
+      "index" : 3,
+      "type" : "If",
+      "label" : "if ($b1 != %intconst1) goto 6",
+      "lineNumber" : 1596,
+      "uses" : [ "$b1", "%intconst1", "$b1 != %intconst1" ]
+    }, {
+      "id" : "stmt_4",
+      "index" : 4,
+      "type" : "AssignLiteral",
+      "label" : "%doubleconst2 = 1.0",
+      "lineNumber" : 1597,
+      "def" : "%doubleconst2",
+      "uses" : [ "1.0" ]
+    }, {
+      "id" : "stmt_5",
+      "index" : 5,
+      "type" : "Return",
+      "label" : "return %doubleconst2",
+      "lineNumber" : 1597,
+      "uses" : [ "%doubleconst2" ]
+    }, {
+      "id" : "stmt_6",
+      "index" : 6,
+      "type" : "Binary",
+      "label" : "$b2 = e cmp %longconst0",
+      "lineNumber" : 1598,
+      "def" : "$b2",
+      "uses" : [ "e", "%longconst0", "e cmp %longconst0" ]
+    }, {
+      "id" : "stmt_7",
+      "index" : 7,
+      "type" : "Cast",
+      "label" : "$i4 = (int) $b2",
+      "lineNumber" : -1,
+      "def" : "$i4",
+      "uses" : [ "$b2", "(int) $b2" ]
+    }, {
+      "id" : "stmt_8",
+      "index" : 8,
+      "type" : "If",
+      "label" : "if ($i4 <= %intconst1) goto 14",
+      "lineNumber" : 1598,
+      "uses" : [ "$i4", "%intconst1", "$i4 <= %intconst1" ]
+    }, {
+      "id" : "stmt_9",
+      "index" : 9,
+      "type" : "New",
+      "label" : "$r5 = new org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+      "lineNumber" : 1599,
+      "def" : "$r5",
+      "uses" : [ "new org.apache.commons.math4.core.jdkmath.AccurateMath$Split" ]
+    }, {
+      "id" : "stmt_10",
+      "index" : 10,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[10@L1599] invokespecial $r5.<init>(d0)",
+      "lineNumber" : 1599,
+      "uses" : [ "$r5", "d0", "invokespecial $r5.<init>(d0)" ]
+    }, {
+      "id" : "stmt_11",
+      "index" : 11,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[11@L1599] $r4 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$500($r5, e)",
+      "lineNumber" : 1599,
+      "def" : "$r4",
+      "uses" : [ "$r5", "e", "invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$500($r5, e)" ]
+    }, {
+      "id" : "stmt_12",
+      "index" : 12,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[12@L1599] $d2 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$600($r4)",
+      "lineNumber" : 1599,
+      "def" : "$d2",
+      "uses" : [ "$r4", "invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$600($r4)" ]
+    }, {
+      "id" : "stmt_13",
+      "index" : 13,
+      "type" : "Return",
+      "label" : "return $d2",
+      "lineNumber" : 1599,
+      "uses" : [ "$d2" ]
+    }, {
+      "id" : "stmt_14",
+      "index" : 14,
+      "type" : "New",
+      "label" : "$r6 = new org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+      "lineNumber" : 1601,
+      "def" : "$r6",
+      "uses" : [ "new org.apache.commons.math4.core.jdkmath.AccurateMath$Split" ]
+    }, {
+      "id" : "stmt_15",
+      "index" : 15,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[15@L1601] invokespecial $r6.<init>(d0)",
+      "lineNumber" : 1601,
+      "uses" : [ "$r6", "d0", "invokespecial $r6.<init>(d0)" ]
+    }, {
+      "id" : "stmt_16",
+      "index" : 16,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[16@L1601] $r1 = invokevirtual $r6.reciprocal()",
+      "lineNumber" : 1601,
+      "def" : "$r1",
+      "uses" : [ "$r6", "invokevirtual $r6.reciprocal()" ]
+    }, {
+      "id" : "stmt_17",
+      "index" : 17,
+      "type" : "Unary",
+      "label" : "$l3 = -e",
+      "lineNumber" : 1601,
+      "def" : "$l3",
+      "uses" : [ "e", "-e" ]
+    }, {
+      "id" : "stmt_18",
+      "index" : 18,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[18@L1601] $r2 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$500($r1, $l3)",
+      "lineNumber" : 1601,
+      "def" : "$r2",
+      "uses" : [ "$r1", "$l3", "invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$500($r1, $l3)" ]
+    }, {
+      "id" : "stmt_19",
+      "index" : 19,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[19@L1601] $d1 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$600($r2)",
+      "lineNumber" : 1601,
+      "def" : "$d1",
+      "uses" : [ "$r2", "invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$600($r2)" ]
+    }, {
+      "id" : "stmt_20",
+      "index" : 20,
+      "type" : "Return",
+      "label" : "return $d1",
+      "lineNumber" : 1601,
+      "uses" : [ "$d1" ]
+    }, {
+      "id" : "exit",
+      "type" : "EXIT",
+      "label" : "Exit"
+    } ],
+    "edges" : [ {
+      "source" : "entry",
+      "target" : "stmt_0",
+      "kind" : "ENTRY"
+    }, {
+      "source" : "stmt_0",
+      "target" : "stmt_1",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_1",
+      "target" : "stmt_2",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_2",
+      "target" : "stmt_3",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_3",
+      "target" : "stmt_6",
+      "kind" : "IF_TRUE"
+    }, {
+      "source" : "stmt_3",
+      "target" : "stmt_4",
+      "kind" : "IF_FALSE"
+    }, {
+      "source" : "stmt_4",
+      "target" : "stmt_5",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_5",
+      "target" : "exit",
+      "kind" : "RETURN"
+    }, {
+      "source" : "stmt_6",
+      "target" : "stmt_7",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_7",
+      "target" : "stmt_8",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_8",
+      "target" : "stmt_14",
+      "kind" : "IF_TRUE"
+    }, {
+      "source" : "stmt_8",
+      "target" : "stmt_9",
+      "kind" : "IF_FALSE"
+    }, {
+      "source" : "stmt_9",
+      "target" : "stmt_10",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_10",
+      "target" : "stmt_11",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_11",
+      "target" : "stmt_12",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_12",
+      "target" : "stmt_13",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_13",
+      "target" : "exit",
+      "kind" : "RETURN"
+    }, {
+      "source" : "stmt_14",
+      "target" : "stmt_15",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_15",
+      "target" : "stmt_16",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_16",
+      "target" : "stmt_17",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_17",
+      "target" : "stmt_18",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_18",
+      "target" : "stmt_19",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_19",
+      "target" : "stmt_20",
+      "kind" : "FALL_THROUGH"
+    }, {
+      "source" : "stmt_20",
+      "target" : "exit",
+      "kind" : "RETURN"
+    } ]
+  },
+  "dfg" : {
+    "nodes" : [ {
+      "id" : "stmt_0",
+      "index" : 0,
+      "type" : "AssignLiteral",
+      "label" : "%longconst0 = 0L",
+      "lineNumber" : 1596,
+      "def" : "%longconst0",
+      "defVar" : "%longconst0",
+      "uses" : [ "0L" ]
+    }, {
+      "id" : "stmt_1",
+      "index" : 1,
+      "type" : "Binary",
+      "label" : "$b1 = e cmp %longconst0",
+      "lineNumber" : 1596,
+      "def" : "$b1",
+      "defVar" : "$b1",
+      "uses" : [ "e", "%longconst0", "e cmp %longconst0" ],
+      "useVars" : [ "e", "%longconst0" ]
+    }, {
+      "id" : "stmt_2",
+      "index" : 2,
+      "type" : "AssignLiteral",
+      "label" : "%intconst1 = 0",
+      "lineNumber" : 1596,
+      "def" : "%intconst1",
+      "defVar" : "%intconst1",
+      "uses" : [ "0" ]
+    }, {
+      "id" : "stmt_3",
+      "index" : 3,
+      "type" : "If",
+      "label" : "if ($b1 != %intconst1) goto 6",
+      "lineNumber" : 1596,
+      "uses" : [ "$b1", "%intconst1", "$b1 != %intconst1" ],
+      "useVars" : [ "$b1", "%intconst1" ]
+    }, {
+      "id" : "stmt_4",
+      "index" : 4,
+      "type" : "AssignLiteral",
+      "label" : "%doubleconst2 = 1.0",
+      "lineNumber" : 1597,
+      "def" : "%doubleconst2",
+      "defVar" : "%doubleconst2",
+      "uses" : [ "1.0" ]
+    }, {
+      "id" : "stmt_5",
+      "index" : 5,
+      "type" : "Return",
+      "label" : "return %doubleconst2",
+      "lineNumber" : 1597,
+      "uses" : [ "%doubleconst2" ],
+      "useVars" : [ "%doubleconst2" ]
+    }, {
+      "id" : "stmt_6",
+      "index" : 6,
+      "type" : "Binary",
+      "label" : "$b2 = e cmp %longconst0",
+      "lineNumber" : 1598,
+      "def" : "$b2",
+      "defVar" : "$b2",
+      "uses" : [ "e", "%longconst0", "e cmp %longconst0" ],
+      "useVars" : [ "e", "%longconst0" ]
+    }, {
+      "id" : "stmt_7",
+      "index" : 7,
+      "type" : "Cast",
+      "label" : "$i4 = (int) $b2",
+      "lineNumber" : -1,
+      "def" : "$i4",
+      "defVar" : "$i4",
+      "uses" : [ "$b2", "(int) $b2" ],
+      "useVars" : [ "$b2" ]
+    }, {
+      "id" : "stmt_8",
+      "index" : 8,
+      "type" : "If",
+      "label" : "if ($i4 <= %intconst1) goto 14",
+      "lineNumber" : 1598,
+      "uses" : [ "$i4", "%intconst1", "$i4 <= %intconst1" ],
+      "useVars" : [ "$i4", "%intconst1" ]
+    }, {
+      "id" : "stmt_9",
+      "index" : 9,
+      "type" : "New",
+      "label" : "$r5 = new org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+      "lineNumber" : 1599,
+      "def" : "$r5",
+      "defVar" : "$r5",
+      "uses" : [ "new org.apache.commons.math4.core.jdkmath.AccurateMath$Split" ]
+    }, {
+      "id" : "stmt_10",
+      "index" : 10,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[10@L1599] invokespecial $r5.<init>(d0)",
+      "lineNumber" : 1599,
+      "uses" : [ "$r5", "d0", "invokespecial $r5.<init>(d0)" ],
+      "useVars" : [ "$r5", "d0" ]
+    }, {
+      "id" : "stmt_11",
+      "index" : 11,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[11@L1599] $r4 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$500($r5, e)",
+      "lineNumber" : 1599,
+      "def" : "$r4",
+      "defVar" : "$r4",
+      "uses" : [ "$r5", "e", "invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$500($r5, e)" ],
+      "useVars" : [ "$r5", "e" ]
+    }, {
+      "id" : "stmt_12",
+      "index" : 12,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[12@L1599] $d2 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$600($r4)",
+      "lineNumber" : 1599,
+      "def" : "$d2",
+      "defVar" : "$d2",
+      "uses" : [ "$r4", "invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$600($r4)" ],
+      "useVars" : [ "$r4" ]
+    }, {
+      "id" : "stmt_13",
+      "index" : 13,
+      "type" : "Return",
+      "label" : "return $d2",
+      "lineNumber" : 1599,
+      "uses" : [ "$d2" ],
+      "useVars" : [ "$d2" ]
+    }, {
+      "id" : "stmt_14",
+      "index" : 14,
+      "type" : "New",
+      "label" : "$r6 = new org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+      "lineNumber" : 1601,
+      "def" : "$r6",
+      "defVar" : "$r6",
+      "uses" : [ "new org.apache.commons.math4.core.jdkmath.AccurateMath$Split" ]
+    }, {
+      "id" : "stmt_15",
+      "index" : 15,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[15@L1601] invokespecial $r6.<init>(d0)",
+      "lineNumber" : 1601,
+      "uses" : [ "$r6", "d0", "invokespecial $r6.<init>(d0)" ],
+      "useVars" : [ "$r6", "d0" ]
+    }, {
+      "id" : "stmt_16",
+      "index" : 16,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[16@L1601] $r1 = invokevirtual $r6.reciprocal()",
+      "lineNumber" : 1601,
+      "def" : "$r1",
+      "defVar" : "$r1",
+      "uses" : [ "$r6", "invokevirtual $r6.reciprocal()" ],
+      "useVars" : [ "$r6" ]
+    }, {
+      "id" : "stmt_17",
+      "index" : 17,
+      "type" : "Unary",
+      "label" : "$l3 = -e",
+      "lineNumber" : 1601,
+      "def" : "$l3",
+      "defVar" : "$l3",
+      "uses" : [ "e", "-e" ],
+      "useVars" : [ "e" ]
+    }, {
+      "id" : "stmt_18",
+      "index" : 18,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[18@L1601] $r2 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$500($r1, $l3)",
+      "lineNumber" : 1601,
+      "def" : "$r2",
+      "defVar" : "$r2",
+      "uses" : [ "$r1", "$l3", "invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$500($r1, $l3)" ],
+      "useVars" : [ "$r1", "$l3" ]
+    }, {
+      "id" : "stmt_19",
+      "index" : 19,
+      "type" : "Invoke",
+      "label" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[19@L1601] $d1 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$600($r2)",
+      "lineNumber" : 1601,
+      "def" : "$d1",
+      "defVar" : "$d1",
+      "uses" : [ "$r2", "invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$600($r2)" ],
+      "useVars" : [ "$r2" ]
+    }, {
+      "id" : "stmt_20",
+      "index" : 20,
+      "type" : "Return",
+      "label" : "return $d1",
+      "lineNumber" : 1601,
+      "uses" : [ "$d1" ],
+      "useVars" : [ "$d1" ]
+    } ],
+    "edges" : [ {
+      "source" : "stmt_0",
+      "target" : "stmt_1",
+      "variable" : "%longconst0",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_1",
+      "target" : "stmt_3",
+      "variable" : "$b1",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_2",
+      "target" : "stmt_3",
+      "variable" : "%intconst1",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_4",
+      "target" : "stmt_5",
+      "variable" : "%doubleconst2",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_0",
+      "target" : "stmt_6",
+      "variable" : "%longconst0",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_6",
+      "target" : "stmt_7",
+      "variable" : "$b2",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_7",
+      "target" : "stmt_8",
+      "variable" : "$i4",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_2",
+      "target" : "stmt_8",
+      "variable" : "%intconst1",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_9",
+      "target" : "stmt_10",
+      "variable" : "$r5",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_9",
+      "target" : "stmt_11",
+      "variable" : "$r5",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_11",
+      "target" : "stmt_12",
+      "variable" : "$r4",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_12",
+      "target" : "stmt_13",
+      "variable" : "$d2",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_14",
+      "target" : "stmt_15",
+      "variable" : "$r6",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_14",
+      "target" : "stmt_16",
+      "variable" : "$r6",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_16",
+      "target" : "stmt_18",
+      "variable" : "$r1",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_17",
+      "target" : "stmt_18",
+      "variable" : "$l3",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_18",
+      "target" : "stmt_19",
+      "variable" : "$r2",
+      "type" : "DEF_USE"
+    }, {
+      "source" : "stmt_19",
+      "target" : "stmt_20",
+      "variable" : "$d1",
+      "type" : "DEF_USE"
+    } ]
+  },
+  "callChain" : {
+    "caller" : {
+      "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>",
+      "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath",
+      "methodName" : "pow",
+      "returnType" : "double",
+      "depth" : 0
+    },
+    "callSites" : [ {
+      "callIndex" : 0,
+      "stmtIndex" : 10,
+      "lineNumber" : 1599,
+      "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[10@L1599] invokespecial $r5.<init>(d0)",
+      "depth" : 0,
+      "callee" : {
+        "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+        "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+        "methodName" : "<init>",
+        "returnType" : "void",
+        "parameterTypes" : [ "double" ],
+        "resolved" : true,
+        "isAbstract" : false,
+        "isNative" : false,
+        "isStatic" : false
+      },
+      "invokeType" : "SPECIAL",
+      "baseVar" : "$r5",
+      "arguments" : [ {
+        "index" : 0,
+        "name" : "d0",
+        "type" : "double"
+      } ],
+      "nestedCalls" : {
+        "caller" : {
+          "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+          "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+          "methodName" : "<init>",
+          "returnType" : "void",
+          "depth" : 1
+        },
+        "callSites" : [ {
+          "callIndex" : 0,
+          "stmtIndex" : 0,
+          "lineNumber" : 1629,
+          "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>[0@L1629] invokespecial %this.<init>()",
+          "depth" : 1,
+          "callee" : {
+            "signature" : "<java.lang.Object: void <init>()>",
+            "className" : "java.lang.Object",
+            "methodName" : "<init>",
+            "returnType" : "void",
+            "parameterTypes" : [ ],
+            "resolved" : true,
+            "isAbstract" : false,
+            "isNative" : false,
+            "isStatic" : false
+          },
+          "invokeType" : "SPECIAL",
+          "baseVar" : "%this",
+          "arguments" : [ ],
+          "nestedCalls" : {
+            "caller" : {
+              "signature" : "<java.lang.Object: void <init>()>",
+              "className" : "java.lang.Object",
+              "methodName" : "<init>",
+              "returnType" : "void",
+              "depth" : 2
+            },
+            "callSites" : [ ],
+            "totalCalls" : 0,
+            "maxDepth" : 3,
+            "callSequence" : [ ]
+          }
+        }, {
+          "callIndex" : 1,
+          "stmtIndex" : 2,
+          "lineNumber" : 1631,
+          "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>[2@L1631] $l0 = invokestatic java.lang.Double.doubleToRawLongBits(x)",
+          "depth" : 1,
+          "callee" : {
+            "signature" : "<java.lang.Double: long doubleToRawLongBits(double)>",
+            "className" : "java.lang.Double",
+            "methodName" : "doubleToRawLongBits",
+            "returnType" : "long",
+            "parameterTypes" : [ "double" ],
+            "resolved" : true,
+            "isAbstract" : false,
+            "isNative" : true,
+            "isStatic" : true
+          },
+          "invokeType" : "STATIC",
+          "arguments" : [ {
+            "index" : 0,
+            "name" : "x",
+            "type" : "double"
+          } ],
+          "result" : {
+            "name" : "$l0",
+            "type" : "long"
+          }
+        }, {
+          "callIndex" : 2,
+          "stmtIndex" : 5,
+          "lineNumber" : 1631,
+          "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>[5@L1631] $d1 = invokestatic java.lang.Double.longBitsToDouble($l1)",
+          "depth" : 1,
+          "callee" : {
+            "signature" : "<java.lang.Double: double longBitsToDouble(long)>",
+            "className" : "java.lang.Double",
+            "methodName" : "longBitsToDouble",
+            "returnType" : "double",
+            "parameterTypes" : [ "long" ],
+            "resolved" : true,
+            "isAbstract" : false,
+            "isNative" : true,
+            "isStatic" : true
+          },
+          "invokeType" : "STATIC",
+          "arguments" : [ {
+            "index" : 0,
+            "name" : "$l1",
+            "type" : "long"
+          } ],
+          "result" : {
+            "name" : "$d1",
+            "type" : "double"
+          }
+        } ],
+        "totalCalls" : 3,
+        "maxDepth" : 3,
+        "callSequence" : [ {
+          "order" : 0,
+          "callee" : "<java.lang.Object: void <init>()>",
+          "invokeType" : "SPECIAL",
+          "lineNumber" : 1629
+        }, {
+          "order" : 1,
+          "callee" : "<java.lang.Double: long doubleToRawLongBits(double)>",
+          "invokeType" : "STATIC",
+          "lineNumber" : 1631
+        }, {
+          "order" : 2,
+          "callee" : "<java.lang.Double: double longBitsToDouble(long)>",
+          "invokeType" : "STATIC",
+          "lineNumber" : 1631
+        } ]
+      }
+    }, {
+      "callIndex" : 1,
+      "stmtIndex" : 11,
+      "lineNumber" : 1599,
+      "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[11@L1599] $r4 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$500($r5, e)",
+      "depth" : 0,
+      "callee" : {
+        "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split access$500(org.apache.commons.math4.core.jdkmath.AccurateMath$Split,long)>",
+        "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+        "methodName" : "access$500",
+        "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+        "parameterTypes" : [ "org.apache.commons.math4.core.jdkmath.AccurateMath$Split", "long" ],
+        "resolved" : true,
+        "isAbstract" : false,
+        "isNative" : false,
+        "isStatic" : true
+      },
+      "invokeType" : "STATIC",
+      "arguments" : [ {
+        "index" : 0,
+        "name" : "$r5",
+        "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+      }, {
+        "index" : 1,
+        "name" : "e",
+        "type" : "long"
+      } ],
+      "result" : {
+        "name" : "$r4",
+        "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+      },
+      "nestedCalls" : {
+        "caller" : {
+          "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split access$500(org.apache.commons.math4.core.jdkmath.AccurateMath$Split,long)>",
+          "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+          "methodName" : "access$500",
+          "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+          "depth" : 1
+        },
+        "callSites" : [ {
+          "callIndex" : 0,
+          "stmtIndex" : 0,
+          "lineNumber" : 1606,
+          "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split access$500(org.apache.commons.math4.core.jdkmath.AccurateMath$Split,long)>[0@L1606] $r1 = invokespecial r0.pow(x1)",
+          "depth" : 1,
+          "callee" : {
+            "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>",
+            "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+            "methodName" : "pow",
+            "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+            "parameterTypes" : [ "long" ],
+            "resolved" : true,
+            "isAbstract" : false,
+            "isNative" : false,
+            "isStatic" : false
+          },
+          "invokeType" : "SPECIAL",
+          "baseVar" : "r0",
+          "arguments" : [ {
+            "index" : 0,
+            "name" : "x1",
+            "type" : "long"
+          } ],
+          "result" : {
+            "name" : "$r1",
+            "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+          },
+          "nestedCalls" : {
+            "caller" : {
+              "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>",
+              "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+              "methodName" : "pow",
+              "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+              "depth" : 2
+            },
+            "callSites" : [ {
+              "callIndex" : 0,
+              "stmtIndex" : 2,
+              "lineNumber" : 1691,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[2@L1691] invokespecial $r9.<init>(%doubleconst0)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "methodName" : "<init>",
+                "returnType" : "void",
+                "parameterTypes" : [ "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "SPECIAL",
+              "baseVar" : "$r9",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "%doubleconst0",
+                "type" : "double"
+              } ]
+            }, {
+              "callIndex" : 1,
+              "stmtIndex" : 8,
+              "lineNumber" : 1694,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[8@L1694] invokespecial $r10.<init>($d2, $d1, $d0)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double,double)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "methodName" : "<init>",
+                "returnType" : "void",
+                "parameterTypes" : [ "double", "double", "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "SPECIAL",
+              "baseVar" : "$r10",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$d2",
+                "type" : "double"
+              }, {
+                "index" : 1,
+                "name" : "$d1",
+                "type" : "double"
+              }, {
+                "index" : 2,
+                "name" : "$d0",
+                "type" : "double"
+              } ]
+            }, {
+              "callIndex" : 2,
+              "stmtIndex" : 19,
+              "lineNumber" : 1700,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[19@L1700] r7 = invokevirtual r7.multiply(r8)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split multiply(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "methodName" : "multiply",
+                "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "parameterTypes" : [ "org.apache.commons.math4.core.jdkmath.AccurateMath$Split" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "VIRTUAL",
+              "baseVar" : "r7",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "r8",
+                "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+              } ],
+              "result" : {
+                "name" : "r7",
+                "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+              }
+            }, {
+              "callIndex" : 3,
+              "stmtIndex" : 20,
+              "lineNumber" : 1704,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[20@L1704] r8 = invokevirtual r8.multiply(r8)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split multiply(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "methodName" : "multiply",
+                "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "parameterTypes" : [ "org.apache.commons.math4.core.jdkmath.AccurateMath$Split" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "VIRTUAL",
+              "baseVar" : "r8",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "r8",
+                "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+              } ],
+              "result" : {
+                "name" : "r8",
+                "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+              }
+            }, {
+              "callIndex" : 4,
+              "stmtIndex" : 25,
+              "lineNumber" : 1707,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[25@L1707] $z0 = invokestatic java.lang.Double.isNaN($d3)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<java.lang.Double: boolean isNaN(double)>",
+                "className" : "java.lang.Double",
+                "methodName" : "isNaN",
+                "returnType" : "boolean",
+                "parameterTypes" : [ "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : true
+              },
+              "invokeType" : "STATIC",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$d3",
+                "type" : "double"
+              } ],
+              "result" : {
+                "name" : "$z0",
+                "type" : "boolean"
+              }
+            }, {
+              "callIndex" : 5,
+              "stmtIndex" : 28,
+              "lineNumber" : 1708,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[28@L1708] $z1 = invokestatic java.lang.Double.isNaN($d4)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<java.lang.Double: boolean isNaN(double)>",
+                "className" : "java.lang.Double",
+                "methodName" : "isNaN",
+                "returnType" : "boolean",
+                "parameterTypes" : [ "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : true
+              },
+              "invokeType" : "STATIC",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$d4",
+                "type" : "double"
+              } ],
+              "result" : {
+                "name" : "$z1",
+                "type" : "boolean"
+              }
+            }, {
+              "callIndex" : 6,
+              "stmtIndex" : 33,
+              "lineNumber" : 1713,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[33@L1713] $d6 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath.abs($d5)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double abs(double)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath",
+                "methodName" : "abs",
+                "returnType" : "double",
+                "parameterTypes" : [ "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : true
+              },
+              "invokeType" : "STATIC",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$d5",
+                "type" : "double"
+              } ],
+              "result" : {
+                "name" : "$d6",
+                "type" : "double"
+              }
+            }, {
+              "callIndex" : 7,
+              "stmtIndex" : 40,
+              "lineNumber" : 1714,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[40@L1714] $d9 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath.copySign(%doubleconst5, $d8)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double copySign(double,double)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath",
+                "methodName" : "copySign",
+                "returnType" : "double",
+                "parameterTypes" : [ "double", "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : true
+              },
+              "invokeType" : "STATIC",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "%doubleconst5",
+                "type" : "double"
+              }, {
+                "index" : 1,
+                "name" : "$d8",
+                "type" : "double"
+              } ],
+              "result" : {
+                "name" : "$d9",
+                "type" : "double"
+              }
+            }, {
+              "callIndex" : 8,
+              "stmtIndex" : 41,
+              "lineNumber" : 1714,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[41@L1714] invokespecial $r11.<init>($d9, %doubleconst5)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "methodName" : "<init>",
+                "returnType" : "void",
+                "parameterTypes" : [ "double", "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "SPECIAL",
+              "baseVar" : "$r11",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$d9",
+                "type" : "double"
+              }, {
+                "index" : 1,
+                "name" : "%doubleconst5",
+                "type" : "double"
+              } ]
+            } ],
+            "totalCalls" : 9,
+            "maxDepth" : 3,
+            "callSequence" : [ {
+              "order" : 0,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+              "invokeType" : "SPECIAL",
+              "lineNumber" : 1691
+            }, {
+              "order" : 1,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double,double)>",
+              "invokeType" : "SPECIAL",
+              "lineNumber" : 1694
+            }, {
+              "order" : 2,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split multiply(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+              "invokeType" : "VIRTUAL",
+              "lineNumber" : 1700
+            }, {
+              "order" : 3,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split multiply(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+              "invokeType" : "VIRTUAL",
+              "lineNumber" : 1704
+            }, {
+              "order" : 4,
+              "callee" : "<java.lang.Double: boolean isNaN(double)>",
+              "invokeType" : "STATIC",
+              "lineNumber" : 1707
+            }, {
+              "order" : 5,
+              "callee" : "<java.lang.Double: boolean isNaN(double)>",
+              "invokeType" : "STATIC",
+              "lineNumber" : 1708
+            }, {
+              "order" : 6,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double abs(double)>",
+              "invokeType" : "STATIC",
+              "lineNumber" : 1713
+            }, {
+              "order" : 7,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double copySign(double,double)>",
+              "invokeType" : "STATIC",
+              "lineNumber" : 1714
+            }, {
+              "order" : 8,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double)>",
+              "invokeType" : "SPECIAL",
+              "lineNumber" : 1714
+            } ]
+          }
+        } ],
+        "totalCalls" : 1,
+        "maxDepth" : 3,
+        "callSequence" : [ {
+          "order" : 0,
+          "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>",
+          "invokeType" : "SPECIAL",
+          "lineNumber" : 1606
+        } ]
+      }
+    }, {
+      "callIndex" : 2,
+      "stmtIndex" : 12,
+      "lineNumber" : 1599,
+      "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[12@L1599] $d2 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$600($r4)",
+      "depth" : 0,
+      "callee" : {
+        "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: double access$600(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+        "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+        "methodName" : "access$600",
+        "returnType" : "double",
+        "parameterTypes" : [ "org.apache.commons.math4.core.jdkmath.AccurateMath$Split" ],
+        "resolved" : true,
+        "isAbstract" : false,
+        "isNative" : false,
+        "isStatic" : true
+      },
+      "invokeType" : "STATIC",
+      "arguments" : [ {
+        "index" : 0,
+        "name" : "$r4",
+        "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+      } ],
+      "result" : {
+        "name" : "$d2",
+        "type" : "double"
+      },
+      "nestedCalls" : {
+        "caller" : {
+          "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: double access$600(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+          "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+          "methodName" : "access$600",
+          "returnType" : "double",
+          "depth" : 1
+        },
+        "callSites" : [ ],
+        "totalCalls" : 0,
+        "maxDepth" : 3,
+        "callSequence" : [ ]
+      }
+    }, {
+      "callIndex" : 3,
+      "stmtIndex" : 15,
+      "lineNumber" : 1601,
+      "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[15@L1601] invokespecial $r6.<init>(d0)",
+      "depth" : 0,
+      "callee" : {
+        "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+        "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+        "methodName" : "<init>",
+        "returnType" : "void",
+        "parameterTypes" : [ "double" ],
+        "resolved" : true,
+        "isAbstract" : false,
+        "isNative" : false,
+        "isStatic" : false
+      },
+      "invokeType" : "SPECIAL",
+      "baseVar" : "$r6",
+      "arguments" : [ {
+        "index" : 0,
+        "name" : "d0",
+        "type" : "double"
+      } ],
+      "nestedCalls" : {
+        "caller" : {
+          "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+          "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+          "methodName" : "<init>",
+          "returnType" : "void",
+          "depth" : 1
+        },
+        "callSites" : [ {
+          "callIndex" : 0,
+          "stmtIndex" : 0,
+          "lineNumber" : 1629,
+          "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>[0@L1629] invokespecial %this.<init>()",
+          "depth" : 1,
+          "callee" : {
+            "signature" : "<java.lang.Object: void <init>()>",
+            "className" : "java.lang.Object",
+            "methodName" : "<init>",
+            "returnType" : "void",
+            "parameterTypes" : [ ],
+            "resolved" : true,
+            "isAbstract" : false,
+            "isNative" : false,
+            "isStatic" : false
+          },
+          "invokeType" : "SPECIAL",
+          "baseVar" : "%this",
+          "arguments" : [ ],
+          "nestedCalls" : {
+            "caller" : {
+              "signature" : "<java.lang.Object: void <init>()>",
+              "className" : "java.lang.Object",
+              "methodName" : "<init>",
+              "returnType" : "void",
+              "depth" : 2
+            },
+            "callSites" : [ ],
+            "totalCalls" : 0,
+            "maxDepth" : 3,
+            "callSequence" : [ ]
+          }
+        }, {
+          "callIndex" : 1,
+          "stmtIndex" : 2,
+          "lineNumber" : 1631,
+          "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>[2@L1631] $l0 = invokestatic java.lang.Double.doubleToRawLongBits(x)",
+          "depth" : 1,
+          "callee" : {
+            "signature" : "<java.lang.Double: long doubleToRawLongBits(double)>",
+            "className" : "java.lang.Double",
+            "methodName" : "doubleToRawLongBits",
+            "returnType" : "long",
+            "parameterTypes" : [ "double" ],
+            "resolved" : true,
+            "isAbstract" : false,
+            "isNative" : true,
+            "isStatic" : true
+          },
+          "invokeType" : "STATIC",
+          "arguments" : [ {
+            "index" : 0,
+            "name" : "x",
+            "type" : "double"
+          } ],
+          "result" : {
+            "name" : "$l0",
+            "type" : "long"
+          }
+        }, {
+          "callIndex" : 2,
+          "stmtIndex" : 5,
+          "lineNumber" : 1631,
+          "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>[5@L1631] $d1 = invokestatic java.lang.Double.longBitsToDouble($l1)",
+          "depth" : 1,
+          "callee" : {
+            "signature" : "<java.lang.Double: double longBitsToDouble(long)>",
+            "className" : "java.lang.Double",
+            "methodName" : "longBitsToDouble",
+            "returnType" : "double",
+            "parameterTypes" : [ "long" ],
+            "resolved" : true,
+            "isAbstract" : false,
+            "isNative" : true,
+            "isStatic" : true
+          },
+          "invokeType" : "STATIC",
+          "arguments" : [ {
+            "index" : 0,
+            "name" : "$l1",
+            "type" : "long"
+          } ],
+          "result" : {
+            "name" : "$d1",
+            "type" : "double"
+          }
+        } ],
+        "totalCalls" : 3,
+        "maxDepth" : 3,
+        "callSequence" : [ {
+          "order" : 0,
+          "callee" : "<java.lang.Object: void <init>()>",
+          "invokeType" : "SPECIAL",
+          "lineNumber" : 1629
+        }, {
+          "order" : 1,
+          "callee" : "<java.lang.Double: long doubleToRawLongBits(double)>",
+          "invokeType" : "STATIC",
+          "lineNumber" : 1631
+        }, {
+          "order" : 2,
+          "callee" : "<java.lang.Double: double longBitsToDouble(long)>",
+          "invokeType" : "STATIC",
+          "lineNumber" : 1631
+        } ]
+      }
+    }, {
+      "callIndex" : 4,
+      "stmtIndex" : 16,
+      "lineNumber" : 1601,
+      "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[16@L1601] $r1 = invokevirtual $r6.reciprocal()",
+      "depth" : 0,
+      "callee" : {
+        "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split reciprocal()>",
+        "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+        "methodName" : "reciprocal",
+        "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+        "parameterTypes" : [ ],
+        "resolved" : true,
+        "isAbstract" : false,
+        "isNative" : false,
+        "isStatic" : false
+      },
+      "invokeType" : "VIRTUAL",
+      "baseVar" : "$r6",
+      "arguments" : [ ],
+      "result" : {
+        "name" : "$r1",
+        "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+      },
+      "nestedCalls" : {
+        "caller" : {
+          "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split reciprocal()>",
+          "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+          "methodName" : "reciprocal",
+          "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+          "depth" : 1
+        },
+        "callSites" : [ {
+          "callIndex" : 0,
+          "stmtIndex" : 4,
+          "lineNumber" : 1671,
+          "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split reciprocal()>[4@L1671] invokespecial $r1.<init>(d1)",
+          "depth" : 1,
+          "callee" : {
+            "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+            "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+            "methodName" : "<init>",
+            "returnType" : "void",
+            "parameterTypes" : [ "double" ],
+            "resolved" : true,
+            "isAbstract" : false,
+            "isNative" : false,
+            "isStatic" : false
+          },
+          "invokeType" : "SPECIAL",
+          "baseVar" : "$r1",
+          "arguments" : [ {
+            "index" : 0,
+            "name" : "d1",
+            "type" : "double"
+          } ],
+          "nestedCalls" : {
+            "caller" : {
+              "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+              "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+              "methodName" : "<init>",
+              "returnType" : "void",
+              "depth" : 2
+            },
+            "callSites" : [ {
+              "callIndex" : 0,
+              "stmtIndex" : 0,
+              "lineNumber" : 1629,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>[0@L1629] invokespecial %this.<init>()",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<java.lang.Object: void <init>()>",
+                "className" : "java.lang.Object",
+                "methodName" : "<init>",
+                "returnType" : "void",
+                "parameterTypes" : [ ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "SPECIAL",
+              "baseVar" : "%this",
+              "arguments" : [ ]
+            }, {
+              "callIndex" : 1,
+              "stmtIndex" : 2,
+              "lineNumber" : 1631,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>[2@L1631] $l0 = invokestatic java.lang.Double.doubleToRawLongBits(x)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<java.lang.Double: long doubleToRawLongBits(double)>",
+                "className" : "java.lang.Double",
+                "methodName" : "doubleToRawLongBits",
+                "returnType" : "long",
+                "parameterTypes" : [ "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : true,
+                "isStatic" : true
+              },
+              "invokeType" : "STATIC",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "x",
+                "type" : "double"
+              } ],
+              "result" : {
+                "name" : "$l0",
+                "type" : "long"
+              }
+            }, {
+              "callIndex" : 2,
+              "stmtIndex" : 5,
+              "lineNumber" : 1631,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>[5@L1631] $d1 = invokestatic java.lang.Double.longBitsToDouble($l1)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<java.lang.Double: double longBitsToDouble(long)>",
+                "className" : "java.lang.Double",
+                "methodName" : "longBitsToDouble",
+                "returnType" : "double",
+                "parameterTypes" : [ "long" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : true,
+                "isStatic" : true
+              },
+              "invokeType" : "STATIC",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$l1",
+                "type" : "long"
+              } ],
+              "result" : {
+                "name" : "$d1",
+                "type" : "double"
+              }
+            } ],
+            "totalCalls" : 3,
+            "maxDepth" : 3,
+            "callSequence" : [ {
+              "order" : 0,
+              "callee" : "<java.lang.Object: void <init>()>",
+              "invokeType" : "SPECIAL",
+              "lineNumber" : 1629
+            }, {
+              "order" : 1,
+              "callee" : "<java.lang.Double: long doubleToRawLongBits(double)>",
+              "invokeType" : "STATIC",
+              "lineNumber" : 1631
+            }, {
+              "order" : 2,
+              "callee" : "<java.lang.Double: double longBitsToDouble(long)>",
+              "invokeType" : "STATIC",
+              "lineNumber" : 1631
+            } ]
+          }
+        }, {
+          "callIndex" : 1,
+          "stmtIndex" : 5,
+          "lineNumber" : 1676,
+          "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split reciprocal()>[5@L1676] $r2 = invokevirtual %this.multiply($r1)",
+          "depth" : 1,
+          "callee" : {
+            "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split multiply(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+            "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+            "methodName" : "multiply",
+            "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+            "parameterTypes" : [ "org.apache.commons.math4.core.jdkmath.AccurateMath$Split" ],
+            "resolved" : true,
+            "isAbstract" : false,
+            "isNative" : false,
+            "isStatic" : false
+          },
+          "invokeType" : "VIRTUAL",
+          "baseVar" : "%this",
+          "arguments" : [ {
+            "index" : 0,
+            "name" : "$r1",
+            "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+          } ],
+          "result" : {
+            "name" : "$r2",
+            "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+          },
+          "nestedCalls" : {
+            "caller" : {
+              "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split multiply(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+              "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+              "methodName" : "multiply",
+              "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+              "depth" : 2
+            },
+            "callSites" : [ {
+              "callIndex" : 0,
+              "stmtIndex" : 4,
+              "lineNumber" : 1660,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split multiply(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>[4@L1660] invokespecial $r0.<init>($d2)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "methodName" : "<init>",
+                "returnType" : "void",
+                "parameterTypes" : [ "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "SPECIAL",
+              "baseVar" : "$r0",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$d2",
+                "type" : "double"
+              } ]
+            }, {
+              "callIndex" : 1,
+              "stmtIndex" : 26,
+              "lineNumber" : 1662,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split multiply(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>[26@L1662] invokespecial $r3.<init>($d22, $d21)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "methodName" : "<init>",
+                "returnType" : "void",
+                "parameterTypes" : [ "double", "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "SPECIAL",
+              "baseVar" : "$r3",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$d22",
+                "type" : "double"
+              }, {
+                "index" : 1,
+                "name" : "$d21",
+                "type" : "double"
+              } ]
+            } ],
+            "totalCalls" : 2,
+            "maxDepth" : 3,
+            "callSequence" : [ {
+              "order" : 0,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+              "invokeType" : "SPECIAL",
+              "lineNumber" : 1660
+            }, {
+              "order" : 1,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double)>",
+              "invokeType" : "SPECIAL",
+              "lineNumber" : 1662
+            } ]
+          }
+        }, {
+          "callIndex" : 2,
+          "stmtIndex" : 10,
+          "lineNumber" : 1680,
+          "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split reciprocal()>[10@L1680] $z0 = invokestatic java.lang.Double.isNaN(d5)",
+          "depth" : 1,
+          "callee" : {
+            "signature" : "<java.lang.Double: boolean isNaN(double)>",
+            "className" : "java.lang.Double",
+            "methodName" : "isNaN",
+            "returnType" : "boolean",
+            "parameterTypes" : [ "double" ],
+            "resolved" : true,
+            "isAbstract" : false,
+            "isNative" : false,
+            "isStatic" : true
+          },
+          "invokeType" : "STATIC",
+          "arguments" : [ {
+            "index" : 0,
+            "name" : "d5",
+            "type" : "double"
+          } ],
+          "result" : {
+            "name" : "$z0",
+            "type" : "boolean"
+          },
+          "nestedCalls" : {
+            "caller" : {
+              "signature" : "<java.lang.Double: boolean isNaN(double)>",
+              "className" : "java.lang.Double",
+              "methodName" : "isNaN",
+              "returnType" : "boolean",
+              "depth" : 2
+            },
+            "callSites" : [ ],
+            "totalCalls" : 0,
+            "maxDepth" : 3,
+            "callSequence" : [ ]
+          }
+        }, {
+          "callIndex" : 3,
+          "stmtIndex" : 21,
+          "lineNumber" : 1680,
+          "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split reciprocal()>[21@L1680] invokespecial $r3.<init>($d10, $d9)",
+          "depth" : 1,
+          "callee" : {
+            "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double)>",
+            "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+            "methodName" : "<init>",
+            "returnType" : "void",
+            "parameterTypes" : [ "double", "double" ],
+            "resolved" : true,
+            "isAbstract" : false,
+            "isNative" : false,
+            "isStatic" : false
+          },
+          "invokeType" : "SPECIAL",
+          "baseVar" : "$r3",
+          "arguments" : [ {
+            "index" : 0,
+            "name" : "$d10",
+            "type" : "double"
+          }, {
+            "index" : 1,
+            "name" : "$d9",
+            "type" : "double"
+          } ],
+          "nestedCalls" : {
+            "caller" : {
+              "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double)>",
+              "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+              "methodName" : "<init>",
+              "returnType" : "void",
+              "depth" : 2
+            },
+            "callSites" : [ {
+              "callIndex" : 0,
+              "stmtIndex" : 6,
+              "lineNumber" : 1640,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double)>[6@L1640] $l2 = invokestatic java.lang.Double.doubleToRawLongBits(high)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<java.lang.Double: long doubleToRawLongBits(double)>",
+                "className" : "java.lang.Double",
+                "methodName" : "doubleToRawLongBits",
+                "returnType" : "long",
+                "parameterTypes" : [ "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : true,
+                "isStatic" : true
+              },
+              "invokeType" : "STATIC",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "high",
+                "type" : "double"
+              } ],
+              "result" : {
+                "name" : "$l2",
+                "type" : "long"
+              }
+            }, {
+              "callIndex" : 1,
+              "stmtIndex" : 15,
+              "lineNumber" : 1640,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double)>[15@L1640] invokespecial %this.<init>($d2, high, low)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double,double)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "methodName" : "<init>",
+                "returnType" : "void",
+                "parameterTypes" : [ "double", "double", "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "SPECIAL",
+              "baseVar" : "%this",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$d2",
+                "type" : "double"
+              }, {
+                "index" : 1,
+                "name" : "high",
+                "type" : "double"
+              }, {
+                "index" : 2,
+                "name" : "low",
+                "type" : "double"
+              } ]
+            } ],
+            "totalCalls" : 2,
+            "maxDepth" : 3,
+            "callSequence" : [ {
+              "order" : 0,
+              "callee" : "<java.lang.Double: long doubleToRawLongBits(double)>",
+              "invokeType" : "STATIC",
+              "lineNumber" : 1640
+            }, {
+              "order" : 1,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double,double)>",
+              "invokeType" : "SPECIAL",
+              "lineNumber" : 1640
+            } ]
+          }
+        } ],
+        "totalCalls" : 4,
+        "maxDepth" : 3,
+        "callSequence" : [ {
+          "order" : 0,
+          "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+          "invokeType" : "SPECIAL",
+          "lineNumber" : 1671
+        }, {
+          "order" : 1,
+          "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split multiply(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+          "invokeType" : "VIRTUAL",
+          "lineNumber" : 1676
+        }, {
+          "order" : 2,
+          "callee" : "<java.lang.Double: boolean isNaN(double)>",
+          "invokeType" : "STATIC",
+          "lineNumber" : 1680
+        }, {
+          "order" : 3,
+          "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double)>",
+          "invokeType" : "SPECIAL",
+          "lineNumber" : 1680
+        } ]
+      }
+    }, {
+      "callIndex" : 5,
+      "stmtIndex" : 18,
+      "lineNumber" : 1601,
+      "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[18@L1601] $r2 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$500($r1, $l3)",
+      "depth" : 0,
+      "callee" : {
+        "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split access$500(org.apache.commons.math4.core.jdkmath.AccurateMath$Split,long)>",
+        "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+        "methodName" : "access$500",
+        "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+        "parameterTypes" : [ "org.apache.commons.math4.core.jdkmath.AccurateMath$Split", "long" ],
+        "resolved" : true,
+        "isAbstract" : false,
+        "isNative" : false,
+        "isStatic" : true
+      },
+      "invokeType" : "STATIC",
+      "arguments" : [ {
+        "index" : 0,
+        "name" : "$r1",
+        "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+      }, {
+        "index" : 1,
+        "name" : "$l3",
+        "type" : "long"
+      } ],
+      "result" : {
+        "name" : "$r2",
+        "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+      },
+      "nestedCalls" : {
+        "caller" : {
+          "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split access$500(org.apache.commons.math4.core.jdkmath.AccurateMath$Split,long)>",
+          "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+          "methodName" : "access$500",
+          "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+          "depth" : 1
+        },
+        "callSites" : [ {
+          "callIndex" : 0,
+          "stmtIndex" : 0,
+          "lineNumber" : 1606,
+          "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split access$500(org.apache.commons.math4.core.jdkmath.AccurateMath$Split,long)>[0@L1606] $r1 = invokespecial r0.pow(x1)",
+          "depth" : 1,
+          "callee" : {
+            "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>",
+            "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+            "methodName" : "pow",
+            "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+            "parameterTypes" : [ "long" ],
+            "resolved" : true,
+            "isAbstract" : false,
+            "isNative" : false,
+            "isStatic" : false
+          },
+          "invokeType" : "SPECIAL",
+          "baseVar" : "r0",
+          "arguments" : [ {
+            "index" : 0,
+            "name" : "x1",
+            "type" : "long"
+          } ],
+          "result" : {
+            "name" : "$r1",
+            "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+          },
+          "nestedCalls" : {
+            "caller" : {
+              "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>",
+              "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+              "methodName" : "pow",
+              "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+              "depth" : 2
+            },
+            "callSites" : [ {
+              "callIndex" : 0,
+              "stmtIndex" : 2,
+              "lineNumber" : 1691,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[2@L1691] invokespecial $r9.<init>(%doubleconst0)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "methodName" : "<init>",
+                "returnType" : "void",
+                "parameterTypes" : [ "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "SPECIAL",
+              "baseVar" : "$r9",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "%doubleconst0",
+                "type" : "double"
+              } ]
+            }, {
+              "callIndex" : 1,
+              "stmtIndex" : 8,
+              "lineNumber" : 1694,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[8@L1694] invokespecial $r10.<init>($d2, $d1, $d0)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double,double)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "methodName" : "<init>",
+                "returnType" : "void",
+                "parameterTypes" : [ "double", "double", "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "SPECIAL",
+              "baseVar" : "$r10",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$d2",
+                "type" : "double"
+              }, {
+                "index" : 1,
+                "name" : "$d1",
+                "type" : "double"
+              }, {
+                "index" : 2,
+                "name" : "$d0",
+                "type" : "double"
+              } ]
+            }, {
+              "callIndex" : 2,
+              "stmtIndex" : 19,
+              "lineNumber" : 1700,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[19@L1700] r7 = invokevirtual r7.multiply(r8)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split multiply(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "methodName" : "multiply",
+                "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "parameterTypes" : [ "org.apache.commons.math4.core.jdkmath.AccurateMath$Split" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "VIRTUAL",
+              "baseVar" : "r7",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "r8",
+                "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+              } ],
+              "result" : {
+                "name" : "r7",
+                "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+              }
+            }, {
+              "callIndex" : 3,
+              "stmtIndex" : 20,
+              "lineNumber" : 1704,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[20@L1704] r8 = invokevirtual r8.multiply(r8)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split multiply(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "methodName" : "multiply",
+                "returnType" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "parameterTypes" : [ "org.apache.commons.math4.core.jdkmath.AccurateMath$Split" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "VIRTUAL",
+              "baseVar" : "r8",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "r8",
+                "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+              } ],
+              "result" : {
+                "name" : "r8",
+                "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+              }
+            }, {
+              "callIndex" : 4,
+              "stmtIndex" : 25,
+              "lineNumber" : 1707,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[25@L1707] $z0 = invokestatic java.lang.Double.isNaN($d3)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<java.lang.Double: boolean isNaN(double)>",
+                "className" : "java.lang.Double",
+                "methodName" : "isNaN",
+                "returnType" : "boolean",
+                "parameterTypes" : [ "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : true
+              },
+              "invokeType" : "STATIC",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$d3",
+                "type" : "double"
+              } ],
+              "result" : {
+                "name" : "$z0",
+                "type" : "boolean"
+              }
+            }, {
+              "callIndex" : 5,
+              "stmtIndex" : 28,
+              "lineNumber" : 1708,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[28@L1708] $z1 = invokestatic java.lang.Double.isNaN($d4)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<java.lang.Double: boolean isNaN(double)>",
+                "className" : "java.lang.Double",
+                "methodName" : "isNaN",
+                "returnType" : "boolean",
+                "parameterTypes" : [ "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : true
+              },
+              "invokeType" : "STATIC",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$d4",
+                "type" : "double"
+              } ],
+              "result" : {
+                "name" : "$z1",
+                "type" : "boolean"
+              }
+            }, {
+              "callIndex" : 6,
+              "stmtIndex" : 33,
+              "lineNumber" : 1713,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[33@L1713] $d6 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath.abs($d5)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double abs(double)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath",
+                "methodName" : "abs",
+                "returnType" : "double",
+                "parameterTypes" : [ "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : true
+              },
+              "invokeType" : "STATIC",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$d5",
+                "type" : "double"
+              } ],
+              "result" : {
+                "name" : "$d6",
+                "type" : "double"
+              }
+            }, {
+              "callIndex" : 7,
+              "stmtIndex" : 40,
+              "lineNumber" : 1714,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[40@L1714] $d9 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath.copySign(%doubleconst5, $d8)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double copySign(double,double)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath",
+                "methodName" : "copySign",
+                "returnType" : "double",
+                "parameterTypes" : [ "double", "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : true
+              },
+              "invokeType" : "STATIC",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "%doubleconst5",
+                "type" : "double"
+              }, {
+                "index" : 1,
+                "name" : "$d8",
+                "type" : "double"
+              } ],
+              "result" : {
+                "name" : "$d9",
+                "type" : "double"
+              }
+            }, {
+              "callIndex" : 8,
+              "stmtIndex" : 41,
+              "lineNumber" : 1714,
+              "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>[41@L1714] invokespecial $r11.<init>($d9, %doubleconst5)",
+              "depth" : 2,
+              "callee" : {
+                "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double)>",
+                "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+                "methodName" : "<init>",
+                "returnType" : "void",
+                "parameterTypes" : [ "double", "double" ],
+                "resolved" : true,
+                "isAbstract" : false,
+                "isNative" : false,
+                "isStatic" : false
+              },
+              "invokeType" : "SPECIAL",
+              "baseVar" : "$r11",
+              "arguments" : [ {
+                "index" : 0,
+                "name" : "$d9",
+                "type" : "double"
+              }, {
+                "index" : 1,
+                "name" : "%doubleconst5",
+                "type" : "double"
+              } ]
+            } ],
+            "totalCalls" : 9,
+            "maxDepth" : 3,
+            "callSequence" : [ {
+              "order" : 0,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+              "invokeType" : "SPECIAL",
+              "lineNumber" : 1691
+            }, {
+              "order" : 1,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double,double)>",
+              "invokeType" : "SPECIAL",
+              "lineNumber" : 1694
+            }, {
+              "order" : 2,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split multiply(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+              "invokeType" : "VIRTUAL",
+              "lineNumber" : 1700
+            }, {
+              "order" : 3,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split multiply(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+              "invokeType" : "VIRTUAL",
+              "lineNumber" : 1704
+            }, {
+              "order" : 4,
+              "callee" : "<java.lang.Double: boolean isNaN(double)>",
+              "invokeType" : "STATIC",
+              "lineNumber" : 1707
+            }, {
+              "order" : 5,
+              "callee" : "<java.lang.Double: boolean isNaN(double)>",
+              "invokeType" : "STATIC",
+              "lineNumber" : 1708
+            }, {
+              "order" : 6,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double abs(double)>",
+              "invokeType" : "STATIC",
+              "lineNumber" : 1713
+            }, {
+              "order" : 7,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double copySign(double,double)>",
+              "invokeType" : "STATIC",
+              "lineNumber" : 1714
+            }, {
+              "order" : 8,
+              "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double,double)>",
+              "invokeType" : "SPECIAL",
+              "lineNumber" : 1714
+            } ]
+          }
+        } ],
+        "totalCalls" : 1,
+        "maxDepth" : 3,
+        "callSequence" : [ {
+          "order" : 0,
+          "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split pow(long)>",
+          "invokeType" : "SPECIAL",
+          "lineNumber" : 1606
+        } ]
+      }
+    }, {
+      "callIndex" : 6,
+      "stmtIndex" : 19,
+      "lineNumber" : 1601,
+      "statement" : "<org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[19@L1601] $d1 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$600($r2)",
+      "depth" : 0,
+      "callee" : {
+        "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: double access$600(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+        "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+        "methodName" : "access$600",
+        "returnType" : "double",
+        "parameterTypes" : [ "org.apache.commons.math4.core.jdkmath.AccurateMath$Split" ],
+        "resolved" : true,
+        "isAbstract" : false,
+        "isNative" : false,
+        "isStatic" : true
+      },
+      "invokeType" : "STATIC",
+      "arguments" : [ {
+        "index" : 0,
+        "name" : "$r2",
+        "type" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split"
+      } ],
+      "result" : {
+        "name" : "$d1",
+        "type" : "double"
+      },
+      "nestedCalls" : {
+        "caller" : {
+          "signature" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: double access$600(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+          "className" : "org.apache.commons.math4.core.jdkmath.AccurateMath$Split",
+          "methodName" : "access$600",
+          "returnType" : "double",
+          "depth" : 1
+        },
+        "callSites" : [ ],
+        "totalCalls" : 0,
+        "maxDepth" : 3,
+        "callSequence" : [ ]
+      }
+    } ],
+    "totalCalls" : 7,
+    "maxDepth" : 3,
+    "callSequence" : [ {
+      "order" : 0,
+      "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+      "invokeType" : "SPECIAL",
+      "lineNumber" : 1599
+    }, {
+      "order" : 1,
+      "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split access$500(org.apache.commons.math4.core.jdkmath.AccurateMath$Split,long)>",
+      "invokeType" : "STATIC",
+      "lineNumber" : 1599
+    }, {
+      "order" : 2,
+      "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: double access$600(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+      "invokeType" : "STATIC",
+      "lineNumber" : 1599
+    }, {
+      "order" : 3,
+      "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: void <init>(double)>",
+      "invokeType" : "SPECIAL",
+      "lineNumber" : 1601
+    }, {
+      "order" : 4,
+      "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split reciprocal()>",
+      "invokeType" : "VIRTUAL",
+      "lineNumber" : 1601
+    }, {
+      "order" : 5,
+      "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: org.apache.commons.math4.core.jdkmath.AccurateMath$Split access$500(org.apache.commons.math4.core.jdkmath.AccurateMath$Split,long)>",
+      "invokeType" : "STATIC",
+      "lineNumber" : 1601
+    }, {
+      "order" : 6,
+      "callee" : "<org.apache.commons.math4.core.jdkmath.AccurateMath$Split: double access$600(org.apache.commons.math4.core.jdkmath.AccurateMath$Split)>",
+      "invokeType" : "STATIC",
+      "lineNumber" : 1601
+    } ]
+  }
+}

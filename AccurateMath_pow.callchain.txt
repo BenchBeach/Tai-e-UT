@@ -1,0 +1,75 @@
+Method Call Chain Analysis
+Target: pow() in org.apache.commons.math4.core.jdkmath.AccurateMath
+Full Signature: <org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>
+
+Call Hierarchy (max depth: 3):
+
+→ [SPECIAL] AccurateMath$Split.<init>(double)
+  ┌─ AccurateMath$Split.<init>()
+  [SPECIAL] Object.<init>()
+  [STATIC] Double.doubleToRawLongBits(double) → long
+  [STATIC] Double.longBitsToDouble(long) → double
+
+→ [STATIC] AccurateMath$Split.access$500(AccurateMath$Split, long) → AccurateMath$Split
+  ┌─ AccurateMath$Split.access$500()
+  [SPECIAL] AccurateMath$Split.pow(long) → AccurateMath$Split
+    ┌─ AccurateMath$Split.pow()
+    [SPECIAL] AccurateMath$Split.<init>(double)
+    [SPECIAL] AccurateMath$Split.<init>(double, double, double)
+    [VIRTUAL] AccurateMath$Split.multiply(AccurateMath$Split) → AccurateMath$Split
+    [VIRTUAL] AccurateMath$Split.multiply(AccurateMath$Split) → AccurateMath$Split
+    [STATIC] Double.isNaN(double) → boolean
+    [STATIC] Double.isNaN(double) → boolean
+    [STATIC] AccurateMath.abs(double) → double
+    [STATIC] AccurateMath.copySign(double, double) → double
+    [SPECIAL] AccurateMath$Split.<init>(double, double)
+
+  └─
+
+→ [STATIC] AccurateMath$Split.access$600(AccurateMath$Split) → double
+→ [SPECIAL] AccurateMath$Split.<init>(double)
+  ┌─ AccurateMath$Split.<init>()
+  [SPECIAL] Object.<init>()
+  [STATIC] Double.doubleToRawLongBits(double) → long
+  [STATIC] Double.longBitsToDouble(long) → double
+
+→ [VIRTUAL] AccurateMath$Split.reciprocal() → AccurateMath$Split
+  ┌─ AccurateMath$Split.reciprocal()
+  [SPECIAL] AccurateMath$Split.<init>(double)
+    ┌─ AccurateMath$Split.<init>()
+    [SPECIAL] Object.<init>()
+    [STATIC] Double.doubleToRawLongBits(double) → long
+    [STATIC] Double.longBitsToDouble(long) → double
+
+  └─
+  [VIRTUAL] AccurateMath$Split.multiply(AccurateMath$Split) → AccurateMath$Split
+    ┌─ AccurateMath$Split.multiply()
+    [SPECIAL] AccurateMath$Split.<init>(double)
+    [SPECIAL] AccurateMath$Split.<init>(double, double)
+
+  └─
+  [STATIC] Double.isNaN(double) → boolean
+  [SPECIAL] AccurateMath$Split.<init>(double, double)
+    ┌─ AccurateMath$Split.<init>()
+    [STATIC] Double.doubleToRawLongBits(double) → long
+    [SPECIAL] AccurateMath$Split.<init>(double, double, double)
+
+  └─
+
+→ [STATIC] AccurateMath$Split.access$500(AccurateMath$Split, long) → AccurateMath$Split
+  ┌─ AccurateMath$Split.access$500()
+  [SPECIAL] AccurateMath$Split.pow(long) → AccurateMath$Split
+    ┌─ AccurateMath$Split.pow()
+    [SPECIAL] AccurateMath$Split.<init>(double)
+    [SPECIAL] AccurateMath$Split.<init>(double, double, double)
+    [VIRTUAL] AccurateMath$Split.multiply(AccurateMath$Split) → AccurateMath$Split
+    [VIRTUAL] AccurateMath$Split.multiply(AccurateMath$Split) → AccurateMath$Split
+    [STATIC] Double.isNaN(double) → boolean
+    [STATIC] Double.isNaN(double) → boolean
+    [STATIC] AccurateMath.abs(double) → double
+    [STATIC] AccurateMath.copySign(double, double) → double
+    [SPECIAL] AccurateMath$Split.<init>(double, double)
+
+  └─
+
+→ [STATIC] AccurateMath$Split.access$600(AccurateMath$Split) → double

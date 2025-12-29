@@ -1,0 +1,25 @@
+Target Method: <org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>
+
+IR Code (Format: [ID] Label | {CFG} | {DFG Deps}):
+----------------------------------------------------------------------------------------------------
+0  : %longconst0 = 0L | {Next: 1} | {Uses: None}
+1  : $b1 = e cmp %longconst0 | {Next: 2} | {Uses: 0}
+2  : %intconst1 = 0 | {Next: 3} | {Uses: None}
+3  : if ($b1 != %intconst1) goto 6 | {True: 6, False: 4} | {Uses: 1, 2}
+4  : %doubleconst2 = 1.0 | {Next: 5} | {Uses: None}
+5  : return %doubleconst2 | {Exit: Exit} | {Uses: 4}
+6  : $b2 = e cmp %longconst0 | {Next: 7} | {Uses: 0}
+7  : $i4 = (int) $b2 | {Next: 8} | {Uses: 6}
+8  : if ($i4 <= %intconst1) goto 14 | {True: 14, False: 9} | {Uses: 7, 2}
+9  : $r5 = new org.apache.commons.math4.core.jdkmath.AccurateMath$Split | {Next: 10} | {Uses: None}
+10 : <org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[10@L1599] invokespecial $r5.<init>(d0) | {Next: 11} | {Uses: 9}
+11 : <org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[11@L1599] $r4 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$500($r5, e) | {Next: 12} | {Uses: 9}
+12 : <org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[12@L1599] $d2 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$600($r4) | {Next: 13} | {Uses: 11}
+13 : return $d2 | {Exit: Exit} | {Uses: 12}
+14 : $r6 = new org.apache.commons.math4.core.jdkmath.AccurateMath$Split | {Next: 15} | {Uses: None}
+15 : <org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[15@L1601] invokespecial $r6.<init>(d0) | {Next: 16} | {Uses: 14}
+16 : <org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[16@L1601] $r1 = invokevirtual $r6.reciprocal() | {Next: 17} | {Uses: 14}
+17 : $l3 = -e | {Next: 18} | {Uses: None}
+18 : <org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[18@L1601] $r2 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$500($r1, $l3) | {Next: 19} | {Uses: 16, 17}
+19 : <org.apache.commons.math4.core.jdkmath.AccurateMath: double pow(double,long)>[19@L1601] $d1 = invokestatic org.apache.commons.math4.core.jdkmath.AccurateMath$Split.access$600($r2) | {Next: 20} | {Uses: 18}
+20 : return $d1 | {Exit: Exit} | {Uses: 19}
